@@ -1,0 +1,13 @@
+{
+  "name": "operation-sentinel-root",
+  "scripts": {
+    "setup": "bash scripts/set.sh",
+    "start": "bash scripts/web.sh",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
